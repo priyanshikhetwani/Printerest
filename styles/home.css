@@ -1,0 +1,28 @@
+.container{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
+
+
+}
+
+.card{
+	 display: inline-block as column-break-inside: avoid;
+	 border-radius: 10%;
+	 border-width: 0px;
+	 padding: 20px;
+	 /*data-aos: fade-up;*/
+}
+
+.btn-danger{
+	border-radius: 10%;
+
+}
